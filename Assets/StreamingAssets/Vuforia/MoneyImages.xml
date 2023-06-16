@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
-    <ImageTarget name="50EuroRueck" size="0.200000 0.110870" />
-    <ImageTarget name="20EuroRueck" size="0.200000 0.108099" />
-    <ImageTarget name="10EuroRueck" size="0.200000 0.103125" />
-    <ImageTarget name="5EuroRueck" size="0.200000 0.102910" />
-    <ImageTarget name="10Euro" size="0.200000 0.101124" />
-    <ImageTarget name="200Euro" size="0.200000 0.104906" />
-    <ImageTarget name="100Euro" size="0.200000 0.103053" />
-    <ImageTarget name="50Euro" size="0.200000 0.106015" />
-    <ImageTarget name="20Euro" size="0.200000 0.108271" />
-    <ImageTarget name="5Euro" size="0.200000 0.100000" />
+    <ImageTarget name="10EuroRueck" size="0.200000 0.105436" />
   </Tracking>
 </QCARConfig>
