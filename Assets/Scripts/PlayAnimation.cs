@@ -15,9 +15,6 @@ public class PlayANim : MonoBehaviour
     public string anim3;
     public string anim4;
 
-    GameObject player1;
-    GameObject player2;
-
     public Vector3 forwardAndDown = new Vector3(0,0.5f,1);
 
     public float playerSpeed = 0.012f;
