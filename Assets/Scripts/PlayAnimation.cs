@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayANim : MonoBehaviour
+public class PlayAnimation : MonoBehaviour
 {
 
     public Animator pla1;
