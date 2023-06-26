@@ -7971,6 +7971,8 @@ GameObject:
   m_Component:
   - component: {fileID: 661121949}
   - component: {fileID: 661121950}
+  - component: {fileID: 661121952}
+  - component: {fileID: 661121951}
   m_Layer: 0
   m_Name: WhaleAnimator
   m_TagString: Untagged
@@ -8005,16 +8007,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aded60d84cad6dd48a14dbd058b913a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pla1: {fileID: 0}
-  pla2: {fileID: 0}
-  whale1: {fileID: 0}
-  whale2: {fileID: 0}
-  anim1: 
-  anim2: 
-  anim3: 
-  anim4: 
+  pla1: {fileID: -6057140222963153312, guid: 54aa7d7c19fc11a458eec7f04a5f4668, type: 3}
+  pla2: {fileID: -6057140222963153312, guid: 54aa7d7c19fc11a458eec7f04a5f4668, type: 3}
+  whale1: {fileID: 2101334979}
+  whale2: {fileID: 807995262}
+  anim1: Swimming
+  anim2: dead
   forwardAndDown: {x: 0, y: 0.5, z: 1}
-  playerSpeed: 0.012
+  playerSpeed: 0.01
+--- !u!54 &661121951
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661121948}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &661121952
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661121948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20224921, y: 0.07189892, z: 0.11191878}
+  m_Center: {x: 0.0020322576, y: 0.00074613094, z: -0.000528723}
 --- !u!1 &662138451
 GameObject:
   m_ObjectHideFlags: 0
@@ -10269,6 +10298,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8304930964150032816, guid: 2bcf53d24179fa5409ec6abcbd32b880,
     type: 3}
   m_PrefabInstance: {fileID: 803314839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &807995262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3582877014822275613, guid: 637fa16e41b58734ea8643b07494530a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2000451367}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &816997744
 PrefabInstance:
@@ -23476,6 +23511,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4962053820269886, guid: 040a9220107b540368b0b3f7e626f1d5,
     type: 3}
   m_PrefabInstance: {fileID: 2088666898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2101334979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3582877014822275613, guid: 637fa16e41b58734ea8643b07494530a,
+    type: 3}
+  m_PrefabInstance: {fileID: 540935170}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2101594756
 GameObject:

@@ -12,22 +12,20 @@ public class PlayAnimation : MonoBehaviour
     public GameObject whale2;
     public string anim1;
     public string anim2;
-    public string anim3;
-    public string anim4;
 
     public Vector3 forwardAndDown = new Vector3(0,0.5f,1);
 
-    public float playerSpeed = 0.012f;
+    public float playerSpeed = 0.12f;
+    private bool swimming = false;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        //werte transform hier speichern
     }
 
     public void moveHorizontal(GameObject player)
     {
-        float howFarToMove = 1 * playerSpeed * Time.deltaTime;
+        float howFarToMove = 10 * playerSpeed * Time.deltaTime; 
         player.transform.Translate(forwardAndDown * -howFarToMove);
 
     }
@@ -37,12 +35,45 @@ public class PlayAnimation : MonoBehaviour
     {
         pla1.Play(anim1);
         pla2.Play(anim1);
+        swimming = true;
+    }
 
-        moveHorizontal(whale1);
-        moveHorizontal(whale2);
+    private void Update()
+    {
+        if (swimming)
+        {
+            moveHorizontal(whale1);
+            moveHorizontal(whale2);
+        }
+    }
 
-        Object.Destroy(whale2);
-        Object.Destroy(whale1);
+    private void OnTriggerExit(Collider other)
+    {
+        Debug.Log("collision triggered");
+        if (other.gameObject.name.Equals("Whale_LowPoly"))
+        { 
+            Debug.Log("name: " + other.gameObject.name.Equals("Whale_LowPoly"));
+            swimming = false;
+            Object.Destroy(whale1);
+            Object.Destroy(whale2);
+        }
+
+        if (other.gameObject.name.Equals("Whale_LowPoly_small"))
+        {
+            swimming = false;
+            Object.Destroy(whale1);
+            Object.Destroy(whale2);
+        }
+    }
+
+    private void RespawnWhales()
+    {
+        if(whale1 = null)
+        {
+            // Instantiate methode die transform variablen mitgeben 
+            // Instantiate(whale1);
+            // Instantiate(whale2);
+        }
     }
 
 }
