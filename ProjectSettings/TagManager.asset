@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Vespa
   - MoneyCount
+  - ParentForWhale
   layers:
   - Default
   - TransparentFX
