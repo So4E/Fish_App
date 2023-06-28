@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayAnimation : MonoBehaviour
+public class WhaleController : MonoBehaviour
 {
 
     public Animator pla1;
@@ -39,7 +39,6 @@ public class PlayAnimation : MonoBehaviour
     {
         float howFarToMove = 10 * playerSpeed * Time.deltaTime; 
         player.transform.Translate(forwardAndDown * -howFarToMove);
-
     }
 
     public void swimAway()
