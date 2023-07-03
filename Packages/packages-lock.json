@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.ptc.vuforia.engine": {
-      "version": "file:com.ptc.vuforia.engine-10.15.4.tgz",
+      "version": "file:/Users/andreas/Documents/Uni/5. Semester/SADI/TestVuf/Packages/com.ptc.vuforia.engine-10.15.4.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -52,7 +52,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.17",
+      "version": "2.0.18",
       "depth": 0,
       "source": "registry",
       "dependencies": {
