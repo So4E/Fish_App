@@ -8,7 +8,6 @@ public class MotorcycleMove : MonoBehaviour
     GameObject vespa;
 
     //movement variables
-    public Vector3 forward = new(1, 0, 0);
     public float playerSpeed = 0.012f;
     private bool drive = false;
 
@@ -39,7 +38,7 @@ public class MotorcycleMove : MonoBehaviour
     public void disappear(GameObject instantiatedVespa)
     {
         float howFarToMove = 10 * playerSpeed * Time.deltaTime;
-        instantiatedVespa.transform.Translate(instantiatedVespa.transform.right * howFarToMove);
+        instantiatedVespa.transform.Translate(Vector3.forward * howFarToMove);
     }
 
     private void OnTriggerExit(Collider other)
@@ -54,18 +53,22 @@ public class MotorcycleMove : MonoBehaviour
 
     public void SpawnVespa()
     {
-        if (vespa == null)
+        if (vespa != null)
         {
+            Object.Destroy(vespa);
+        }
+
             Debug.Log("vespa is null. spawning new vespa");
             parentForVespa = GameObject.FindGameObjectWithTag("ParentForVespa");
 
             Vector3 currentLocation =
                 new(parentForVespa.transform.position.x + 0.04f, parentForVespa.transform.position.y + 0.004f, parentForVespa.transform.position.z + 0.02f);
-            vespa = Instantiate(whatToSpawn, currentLocation, vespaRotation);
+            Vector3 currentRotation =
+                new(parentForVespa.transform.rotation.x, parentForVespa.transform.rotation.y -90, parentForVespa.transform.rotation.z);
+            vespa = Instantiate(whatToSpawn, currentLocation, Quaternion.Euler(currentRotation));
             vespa.transform.localScale = new(0.015f, 0.015f, 0.015f);
 
             vespa.transform.parent = parentForVespa.transform;
-        }
     }
 
 }
