@@ -36,9 +36,9 @@ Material:
     m_Floats:
     - _EdgeLength: 13.910714
     - _Parallax: 0.5892857
-    - _Shininess: 0.65546983
+    - _Shininess: 1
     - _Smoothness: 1
     m_Colors:
-    - _Color: {r: 0.81960785, g: 0.81960785, b: 0.81960785, a: 1}
-    - _SpecColor: {r: 1, g: 0.67452425, b: 0.36764705, a: 1}
+    - _Color: {r: 0.5283019, g: 0.5258099, b: 0.5258099, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
