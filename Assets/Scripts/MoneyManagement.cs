@@ -12,7 +12,6 @@ public class MoneyManagement : MonoBehaviour
     bool addedTenToCount;
     bool addedTwentyToCount;
     bool addedFiftyToCount;
-    bool addedHundredToCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +24,10 @@ public class MoneyManagement : MonoBehaviour
         switch (scannedBillValue)
         {
             case 5:
-                if (!addedFiftyToCount)
+                if (!addedFiveToCount)
                 {
                     amountToAdd = 5;
-                    addedFiftyToCount = true;
+                    addedFiveToCount = true;
                 }
                 break;
             case 10:
@@ -50,13 +49,6 @@ public class MoneyManagement : MonoBehaviour
                 {
                     amountToAdd = 50;
                     addedFiftyToCount = true;
-                }
-                break;
-            case 100:
-                if (!addedHundredToCount)
-                {
-                    amountToAdd = 100;
-                    addedHundredToCount = true;
                 }
                 break;
         }

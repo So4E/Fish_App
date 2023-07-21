@@ -11,17 +11,12 @@ public class MotorcycleMove : MonoBehaviour
     public float playerSpeed = 0.012f;
     private bool drive = false;
 
-    //variables to spawn vespa
-    public GameObject whatToSpawn;
-    Quaternion vespaRotation = Quaternion.Euler(0, -91, 0);
-    GameObject parentForVespa;
-
     // Update is called once per frame
     private void Update()
     {
         if (drive)
         {
-            disappear(vespa);
+            disappear();
         }
     }
 
@@ -35,22 +30,27 @@ public class MotorcycleMove : MonoBehaviour
         drive = true;
     }
 
-    public void disappear(GameObject instantiatedVespa)
+    void disappear()
     {
+        if (vespa == null)
+        {
+            vespa = GameObject.FindGameObjectWithTag("Vespa");
+        }
         float howFarToMove = 10 * playerSpeed * Time.deltaTime;
-        instantiatedVespa.transform.Translate(Vector3.forward * howFarToMove);
+        vespa.transform.Translate(Vector3.forward * howFarToMove);
     }
 
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("collision triggered");
-        if (other.gameObject.name.Equals("Vehicle01_Vespa(Clone)"))
+        if (other.gameObject.name.Equals("Vehicle01_Vespa"))
         {
             drive = false;
             Object.Destroy(vespa);
         }
     }
 
+    /* --- NOT NEEDED ANYMORE DUE TO SPAWNING OF WHOLE SCENE ON 10 EURO BACK
     public void SpawnVespa()
     {
         if (vespa != null)
@@ -69,6 +69,6 @@ public class MotorcycleMove : MonoBehaviour
             vespa.transform.localScale = new(0.015f, 0.015f, 0.015f);
 
             vespa.transform.parent = parentForVespa.transform;
-    }
+    }*/
 
 }
