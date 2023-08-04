@@ -855,12 +855,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ever wondered how the buildings depicted on each euro note looked like
-    in 3D? This App makes it possible!\nJust put a euro note flat on a table or another
-    plane and scan it. You will be able to see the buildings in AR through your mobile
-    phone, popping up above any note. Try assembling different euro notes and build
-    your own european city! Just play around and try out what happens for example
-    if you turn one note upside down... \n\nHave fun! "
+  m_text: "Ever wondered how the buildings depicted on the Euro notes looked like
+    in 3D? \nJust put a Euro note flat on a table in front of you and scan it. You
+    will be able to see hidden scenes in AR through your mobile phone, popping up
+    above the notes shown on the screen. Try assembling different euro notes and
+    build your own european city! \n\nCan you reach the highest 'money count'?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -869,8 +868,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292861922
+  m_fontColor: {r: 0.8867924, g: 0.8742435, b: 0.8742435, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1149,7 +1148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 994.2, y: -605}
+  m_AnchoredPosition: {x: 539, y: -605}
   m_SizeDelta: {x: 713.079, y: 257.763}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723894997
@@ -1221,7 +1220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4007285, g: 0.02745098, b: 0.4528302, a: 0.6156863}
+  m_Color: {r: 0.85882354, g: 0.76303923, b: 0.3372549, a: 0.29803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1297,7 +1296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14373444, g: 0.3584906, b: 0.23502873, a: 0.98039216}
+  m_Color: {r: 0.6320754, g: 0.32498217, b: 0.39954522, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
