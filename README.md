@@ -21,3 +21,6 @@ Features:
 Gruppenmitglieder: 
 Andreas Marton, 579807
 Sophia Eschrich, 580889
+
+Disclaimer: Meine (Andreas) Scenes - 10€ Vorne, 20€ Vorne, 50€ Vorne - befinden sich auf dem Branch branch2merge.
+Aus mir unerklärlichen Gründen war das mergen der branch mit der main nicht möglich, obwohl ein test merge davor mit eine anderen branch problemlos funkionierte. 
